@@ -4,6 +4,8 @@ console.log("page loaded!", divs.length, "words found");
 
 document.addEventListener("click", randomize);
 
+function randomize() {
+  console.log("clicked! scattering words...");
 
   divs.forEach(function(div) {
     let rotate     = randomNumber(0, 360);
@@ -24,4 +26,3 @@ function randomColor() {
   let colors = ["whitesmoke", "dodgerblue", "tomato", "gold", "lightgreen", "violet", "coral"];
   return colors[randomNumber(0, colors.length - 1)];
 }
-document.addEventListener("click", randomize);
